@@ -1,0 +1,56 @@
+Z S B H L P Q X E M T Y N F R A
+id num for else while + - * / > >= < <= == != ; , ( ) { } = bool void char string int long float double if get put return & ｜
+Z->S Z
+Z->@
+S->A L ;
+S->id B
+S->if ( X ) { Z } ; Q
+S->while ( X ) { Z } ;
+S->get ( L ) ;
+S->put ( L ) ;
+B->( L ) ;
+B->= E ;
+L->id P
+L->num
+L->@
+P->, id P
+P->( L ) { Z } ;
+P->@
+Q->else { Z } ;
+Q->@
+Q->S
+X->E R E
+E->T H
+E->+ T H
+E->- T H
+E->& T H
+E->｜ T H
+H->M H
+H->@
+M->+ T
+M->- T
+M->｜ T
+M->& T
+T->F Y
+Y->N Y
+Y->@
+N->* F
+N->/ F
+F->id
+F->num
+F->( E )
+R->>
+R->>=
+R-><
+R-><=
+R->==
+R->!=
+A->char
+A->string
+A->int
+A->long
+A->float
+A->double
+A->bool
+A->void
+A->return

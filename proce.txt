@@ -1,0 +1,28 @@
+Z S Z
+S get ( L ) ;
+L id P
+P @
+Z S Z
+S if ( X ) { Z } ; Q
+X E R E
+E T H
+T F Y
+F id
+Y @
+H @
+R ==
+E T H
+T F Y
+F num
+Y @
+H @
+Z S Z
+S id B
+B = E ;
+E T H
+T F Y
+F num
+Y @
+H @
+Z @
+Z @

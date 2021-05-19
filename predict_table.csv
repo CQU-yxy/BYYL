@@ -1,0 +1,138 @@
+id,num,for,else,while,+,-,*,/,>,>=,<,<=,==,!=,;,",",(,),{,},=,bool,void,char,string,int,long,float,double,if,get,put,return,&,｜
+"Z->S Z
+", , , ,"Z->S Z
+", , , , , , , , , , , , , , , ,"Z->@
+", ,"Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+","Z->S Z
+", , 
+"S->id B
+", , , ,"S->while ( X ) { Z } ;
+", , , , , , , , , , , , , , , ,synch, ,"S->A L ;
+","S->A L ;
+","S->A L ;
+","S->A L ;
+","S->A L ;
+","S->A L ;
+","S->A L ;
+","S->A L ;
+","S->if ( X ) { Z } ; Q
+","S->get ( L ) ;
+","S->put ( L ) ;
+","S->A L ;
+", , 
+synch, , , ,synch, , , , , , , , , , , , ,"B->( L ) ;
+", , ,synch,"B->= E ;
+",synch,synch,synch,synch,synch,synch,synch,synch,synch,synch,synch,synch, , 
+ , , , , ,"H->M H
+","H->M H
+", , ,"H->@
+","H->@
+","H->@
+","H->@
+","H->@
+","H->@
+","H->@
+", , ,"H->@
+", , , , , , , , , , , , , , , ,"H->M H
+","H->M H
+"
+"L->id P
+","L->num
+", , , , , , , , , , , , , ,"L->@
+", , ,"L->@
+", , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , ,"P->@
+","P->, id P
+","P->( L ) { Z } ;
+","P->@
+", , , , , , , , , , , , , , , , , 
+"Q->@
+", , ,"Q->else { Z } ;
+","Q->@
+", , , , , , , , , , , , , , , ,"Q->@
+", ,"Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+","Q->@
+", , 
+"X->E R E
+","X->E R E
+", , , ,"X->E R E
+","X->E R E
+", , , , , , , , , , ,"X->E R E
+",synch, , , , , , , , , , , , , , , ,"X->E R E
+","X->E R E
+"
+"E->T H
+","E->T H
+", , , ,"E->+ T H
+","E->- T H
+", , ,synch,synch,synch,synch,synch,synch,synch, ,"E->T H
+",synch, , , , , , , , , , , , , , , ,"E->& T H
+","E->｜ T H
+"
+ , , , , ,"M->+ T
+","M->- T
+", , ,synch,synch,synch,synch,synch,synch,synch, , ,synch, , , , , , , , , , , , , , , ,"M->& T
+","M->｜ T
+"
+"T->F Y
+","T->F Y
+", , , ,synch,synch, , ,synch,synch,synch,synch,synch,synch,synch, ,"T->F Y
+",synch, , , , , , , , , , , , , , , ,synch,synch
+ , , , , ,"Y->@
+","Y->@
+","Y->N Y
+","Y->N Y
+","Y->@
+","Y->@
+","Y->@
+","Y->@
+","Y->@
+","Y->@
+","Y->@
+", , ,"Y->@
+", , , , , , , , , , , , , , , ,"Y->@
+","Y->@
+"
+ , , , , ,synch,synch,"N->* F
+","N->/ F
+",synch,synch,synch,synch,synch,synch,synch, , ,synch, , , , , , , , , , , , , , , ,synch,synch
+"F->id
+","F->num
+", , , ,synch,synch,synch,synch,synch,synch,synch,synch,synch,synch,synch, ,"F->( E )
+",synch, , , , , , , , , , , , , , , ,synch,synch
+synch,synch, , , ,synch,synch, , ,"R->>
+","R->>=
+","R-><
+","R-><=
+","R->==
+","R->!=
+", , ,synch, , , , , , , , , , , , , , , , ,synch,synch
+synch,synch, , , , , , , , , , , , , , , , , , , , ,"A->bool
+","A->void
+","A->char
+","A->string
+","A->int
+","A->long
+","A->float
+","A->double
+", , , ,A->return, , 
