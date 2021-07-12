@@ -1,0 +1,14 @@
+0   num1 := 3333
+1   num2 := 6666
+2   num3 := 9999
+3   op := 1
+4   while op > 0 goto 6
+5   if op == 1 goto 7
+6   goto 8
+7   out := num1
+8   if op == 2 goto 10
+9   goto 11
+10   out := num2
+11   if op == 2 goto 13
+12   goto 14
+13   out := num3

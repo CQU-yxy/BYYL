@@ -1,0 +1,26 @@
+addi $t0, $zero, 1
+addi $t1, $zero, 1
+addi $t2, $zero, 0
+addi $t3, $zero, 0
+beq $t2, $t3, loop5
+j loop7
+loop5:
+add $t4, $t1, $t0
+add $t5, $zero, $t4
+loop7:
+addi $t6, $zero, 1
+beq $t2, $t6, loop9
+j loop11
+loop9:
+sub $t7, $t0, $t1
+add $t5, $zero, $t7
+loop11:
+addi $t8, $zero, 2
+beq $t2, $t8, loop13
+j loop15
+loop13:
+or $t9, $t1, $t0
+add $t5, $zero, $t9
+loop15:
+addi $t10, $zero, 3
+beq $t2, $t10, loop17
